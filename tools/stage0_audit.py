@@ -33,7 +33,7 @@ def audit(expected):
  return result
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--expected-tag',choices=['old','new'],default='new');ap.add_argument('--report',default='docs/階段0標籤驗證.md');args=ap.parse_args();r=audit(args.expected_tag)
- out=['# 階段 0 首行標籤與基準驗證','','執行方式：`python tools/stage0_audit.py --expected-tag '+args.expected_tag+'`。此檢查只核對搬移與標籤，不代表原文內容、去重或檢索已通過。','','|檢查|結果|','|---|---|']
+ out=['# 階段 0 首行標籤與基準驗證','','執行方式：`python tools/stage0_audit.py --expected-tag '+args.expected_tag+'`。以下為本機工作樹檢查，不代表遠端已發佈；遠端首行更新遭自動審核拒絕。此檢查不代表原文內容、去重或檢索已通過。','','|檢查|結果|','|---|---|']
  for k,v in r.items():
   if not isinstance(v,list):out.append(f'|{k}|{v}|')
  for k in ['卡片異常','失效連結']:out+=['','## '+k,'']+(r[k]or['無。'])
