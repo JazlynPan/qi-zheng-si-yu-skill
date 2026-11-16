@@ -96,9 +96,11 @@ def main():
                 before.setdefault(path, original); updated.add(path.name)
             result = additions(record, original)
             digest = hashlib.sha256(norm(result).encode()).hexdigest()
-            if not path.exists() and digest in signatures:
-                rows.append({'標題':name, '出處':tw(record['source']), '結果':'完全同文候選，未新增', '問題':[], '已有卡片':signatures[digest]})
-                continue
+            # 異名同文可能是不同概念或圖表指標；僅報候選，不能自動折疊。
+            # 概念辨義由逐節判讀處理；階段2才分群，任何刪卡仍須使用者確認。
+            candidate = signatures.get(digest) if not path.exists() else None
+            if candidate:
+                status = '異名同文候選，保留不同卡名供後續辨義'
             if not path.exists(): created.add(path.name)
             signatures[digest] = path.name
             if result != original: path.write_text(result)

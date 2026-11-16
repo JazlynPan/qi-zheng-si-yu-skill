@@ -13,7 +13,8 @@ def main():
     docs = root / 'docs'
     folder = docs / '階段1.5檢查'
     inventory = json.loads((folder / '雲端盤點資料.json').read_text())
-    completed = json.loads((folder / '逐書進度.json').read_text())
+    progress = json.loads((folder / '逐書進度.json').read_text())
+    completed = {k: v for k, v in progress.items() if v.get('完成', True)}
     rows = inventory['逐檔結果']
     cards = len(list((root / 'qi-zheng-si-yu/knowledge').glob('*.md')))
     pdfs = [r for r in rows if r['類型'] == 'application/pdf']
@@ -26,7 +27,7 @@ def main():
              '- 未完成收尾的第二次雲端盤點；此為暫停點，不是全庫完成報告。', '',
              '|新增書籍／文件|PDF頁數|狀態|', '|---|---:|---|']
     for row in new:
-        state = completed.get(row['雲端識別碼'], {})
+        state = progress.get(row['雲端識別碼'], {})
         title = state.get('書名', row.get('書名', row['檔名']))
         status = state.get('狀態', '待逐書結構核對及逐節提煉')
         if row['類型'] != 'application/pdf': status = state.get('狀態', '待提煉')+'；使用節題＋原始段落編號'
@@ -37,9 +38,10 @@ def main():
         pages = row['僅頁尾水印或頁碼頁']
         if pages:
             table.append('- ' + row['檔名'] + '：' + '、'.join(str(p['PDF頁碼']) for p in pages) + '。')
-    table += ['', '## 本次完成與保留事項', '', '- 《源髓歌》13頁讀完：正文兩部分；三命部56個引文段落、七政四餘部11個明示篇題。113筆來源卡片段通過閘門，新增61張、追加既有12張。',
+    table += ['', '## 本次完成與保留事項', '', '- 《源髓歌》13頁讀完：正文兩部分；三命部56個引文段落、七政四餘部11個明示篇題。113筆來源卡片段通過閘門，原批新增61張、追加既有12張；異名候選修復另補建22張。',
+              '- 異名同文閘門修復：補建262張，原19本133張、《源髓歌》22張、Word16張、《欽定日課》5張及《璇璣抉微》卷一86張；詳見「階段1.5檢查/異名同文漏建修復.json」。沒有刪卡或改寫既有文字。',
               '- 三命部卡名以篇名限定，避免混用；適用範圍索引仍待階段2建立。第9及12頁各有不可辨字「�」，保留原字另待核對。',
-              '- 《楊國正七政四餘彙編》253段已讀完；269筆來源卡片段通過閘門，新增98張、追加既有92張。原檔所稱外部原講義及影音未另取得核對，文件最後一講未完，不補寫。',
+              '- 《楊國正七政四餘彙編》253段已讀完；269筆來源卡片段通過閘門，原批新增98張、追加既有92張；異名候選修復另補建16張。原檔所稱外部原講義及影音未另取得核對，文件最後一講未完，不補寫。',
               '- Word定位方式依使用者明確回覆：使用「節題＋原始段落編號」，不虛構PDF頁碼。',
               '- 先前14張既有卡片的「永珍」問題仍保留待核對，未擅自改寫。',
               '- 原書序言、版本故事、宣傳、一般研讀提醒未製卡。', '', '## 復工順序', '',
@@ -50,7 +52,7 @@ def main():
     lines = text.splitlines()
     known = {line.split('|')[3] for line in lines if line.startswith('|') and len(line.split('|')) == 10}
     for row in new:
-        state = completed.get(row['雲端識別碼'], {})
+        state = progress.get(row['雲端識別碼'], {})
         title = state.get('書名', row.get('書名', row['檔名']))
         status = state.get('狀態', '待逐書結構核對及逐節提煉')
         span = state.get('已處理範圍', '尚未逐節提煉')
