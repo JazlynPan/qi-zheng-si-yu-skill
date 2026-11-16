@@ -11,7 +11,7 @@ class Source:
         self.pages, self.offsets = [], []
         position = 0
         for page in pages:
-            text = ''.join(line.strip() for line in page.splitlines() if line.strip()
+            text = ''.join(line.strip() for line in page.splitlines() if line.strip() and line.strip() != 'asas'
                            and not line.strip().isdigit()
                            and not line.strip().startswith(('如果有', '站 id')))
             self.offsets.append(position)
