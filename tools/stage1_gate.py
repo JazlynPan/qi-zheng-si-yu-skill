@@ -26,12 +26,12 @@ def source_text(pages, first, last):
     return '\n'.join(line for page in pages[first-1:last] for line in page.splitlines()
                      if not line.strip().isdigit() and not line.strip().startswith(('如果有错漏','如果有内容有错漏')))
 
-def gate(record, pages):
+def gate(record, pages, unit="页"):
     errors = []
-    m = re.search(r'《([^》]+)》第(\d+)(?:[—–-](\d+))?页', record.get('source', ''))
-    if not m: return ['書名或 PDF 頁碼無法解析']
+    m = re.search(r'《([^》]+)》第(\d+)(?:[—–-](\d+))?' + re.escape(unit), record.get('source', ''))
+    if not m: return ['書名或來源定位無法解析']
     first, last = int(m[2]), int(m[3] or m[2])
-    if not 1 <= first <= last <= len(pages): return ['PDF 頁碼越界']
+    if not 1 <= first <= last <= len(pages): return ['來源定位越界']
     raw = norm(source_text(pages, first, last))
     for field in FIELDS:
         value = record.get('fields', {}).get(field, '').strip()
@@ -68,7 +68,13 @@ def main():
     ap.add_argument('batch', type=Path); ap.add_argument('--source', type=Path, required=True)
     ap.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[1])
     ap.add_argument('--apply', action='store_true'); ap.add_argument('--report', type=Path, required=True)
-    args = ap.parse_args(); pages = args.source.read_text().split('\f')
+    ap.add_argument('--source-format', choices=['pdf-text', 'docx-paragraphs'], default='pdf-text')
+    args = ap.parse_args()
+    if args.source_format == 'docx-paragraphs':
+        paragraphs = json.loads(args.source.read_text())
+        assert [x['原始段落編號'] for x in paragraphs] == list(range(1, len(paragraphs)+1))
+        pages = [x['文字'] for x in paragraphs]
+    else: pages = args.source.read_text().split('\f')
     if pages[-1] == '': pages.pop()
     batch = json.loads(args.batch.read_text()); folder = args.root/'qi-zheng-si-yu/knowledge'
     rows = []; created = set(); updated = set(); before = {}
@@ -77,7 +83,7 @@ def main():
         digest = hashlib.sha256(norm(existing.read_text()).encode()).hexdigest()
         signatures.setdefault(digest, existing.name)
     for record in batch:
-        errors = gate(record, pages)
+        errors = gate(record, pages, "段" if args.source_format == "docx-paragraphs" else "页")
         name = tw(record['name']).translate(str.maketrans('/:\\*?"<>|','／：＼＊？＂＜＞｜'))
         path = folder/(name + '.md')
         original = path.read_text() if path.exists() else None

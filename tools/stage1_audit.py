@@ -43,7 +43,7 @@ def audit_cards(root, baseline):
         for field in FIELDS:
             if not fields.get(field): problems.append('欄位缺失或空白：' + field)
         if not re.search(r'《[^》]+》', text): problems.append('未偵測到書名')
-        if not re.search(r'第\s*\d+[^\n]*頁', text): problems.append('未偵測到 PDF 頁碼')
+        if not re.search(r'第\s*\d+[^\n]*頁', text) and not re.search(r'《楊國正七政四餘彙編》第\d+(?:[—–-]\d+)?段', text): problems.append('未偵測到PDF頁碼或已授權Word段落定位')
         if problems: structural.append({'檔案': p.relative_to(root).as_posix(), '問題': problems})
     return {'基準提交': baseline, '基準卡片數': len(names), '目前卡片數': len(files),
             '原文保留問題數': len(errors), '原文保留問題': errors,
