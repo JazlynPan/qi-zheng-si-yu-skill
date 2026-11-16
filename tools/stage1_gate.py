@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""執行：逐段核對來源、四欄與重複候選；只新增卡片或追加引文，不重寫既有文字。"""
+"""執行：逐段核對來源、四欄與重複候選；只新增卡片或追加引文，不重寫既有文字。
+
+目錄：tw與norm（字形）；source_text與gate（來源閘門）；additions（追加）；main（批次與保留檢查）。
+"""
 import argparse, hashlib, json, re
 from pathlib import Path
 from opencc import OpenCC
@@ -9,10 +12,11 @@ HEADINGS = ['核心概念', '使用規則', '操作步驟', '原文例子']
 
 def tw(s):
     protected = {'斗':'QZDOUPROTECT','丑':'QZCHOUPROTECT','干':'QZGANPROTECT',
-                 '天后':'QZTIANHOUPROTECT','消息':'QZXIAOXIPROTECT'}
+                 '天后':'QZTIANHOUPROTECT','消息':'QZXIAOXIPROTECT',
+                 '万象':'QZWANXIANGPROTECT','萬象':'QZTRADWANXIANGPROTECT'}
     for term, key in protected.items(): s = s.replace(term, key)
     s = CC.convert(s).replace('司檯', '司臺')
-    for term, key in protected.items(): s = s.replace(key, term)
+    for term, key in protected.items(): s = s.replace(key, "萬象" if term in ("万象", "萬象") else term)
     return s
 
 def norm(s):
@@ -54,7 +58,8 @@ def additions(record, original):
         end = result.find('\n## ', start)
         if end == -1: end = len(result)
         section = result[start:end]
-        if source in section and norm(value) in norm(section): continue
+        blocks = re.split(r'(?=^《[^》]+》第)', section, flags=re.M)
+        if any(block.startswith(source + '：') and norm(value) in norm(block.split('：', 1)[1]) for block in blocks): continue
         result = result[:end].rstrip('\n') + marker + result[end:]
     return result
 
@@ -67,6 +72,10 @@ def main():
     if pages[-1] == '': pages.pop()
     batch = json.loads(args.batch.read_text()); folder = args.root/'qi-zheng-si-yu/knowledge'
     rows = []; created = set(); updated = set(); before = {}
+    signatures = {}
+    for existing in folder.glob('*.md'):
+        digest = hashlib.sha256(norm(existing.read_text()).encode()).hexdigest()
+        signatures.setdefault(digest, existing.name)
     for record in batch:
         errors = gate(record, pages)
         name = tw(record['name']).translate(str.maketrans('/:\\*?"<>|','／：＼＊？＂＜＞｜'))
@@ -76,10 +85,16 @@ def main():
         if not errors and args.apply:
             if original is None:
                 original = '#七政四餘\n' + ''.join('\n## '+h+'\n\n'+('無' if i==3 else '原文未提及')+'\n' for i,h in enumerate(HEADINGS))
-                created.add(path.name)
+                pass  # 確認新卡不是完全同文後才登記新增。
             elif path.name not in created:
                 before.setdefault(path, original); updated.add(path.name)
             result = additions(record, original)
+            digest = hashlib.sha256(norm(result).encode()).hexdigest()
+            if not path.exists() and digest in signatures:
+                rows.append({'標題':name, '出處':tw(record['source']), '結果':'完全同文候選，未新增', '問題':[], '已有卡片':signatures[digest]})
+                continue
+            if not path.exists(): created.add(path.name)
+            signatures[digest] = path.name
             if result != original: path.write_text(result)
             elif path.exists(): status = '引文已存在，未重複追加'
         rows.append({'標題':name, '出處':tw(record['source']), '結果':status, '問題':errors})
