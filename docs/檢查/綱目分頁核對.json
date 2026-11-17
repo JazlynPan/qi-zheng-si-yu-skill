@@ -1,0 +1,38 @@
+{
+  "PDF頁數": 435,
+  "文字檔分頁": 435,
+  "PDF_SHA256": "647dd4a5f503ef69db26a7bc14902a766a94dbec67e1ff09a44a86988139cca6",
+  "核對方式": "使用原pdftotext -layout逐頁重取，同時記錄不同引擎字序差異，不把引擎排序差異當作錯頁。",
+  "檢查頁": [
+    {
+      "PDF實際頁碼": 1,
+      "同一抽取器逐頁重取完全一致": true,
+      "PyMuPDF字序完全一致": false,
+      "PyMuPDF字元組成一致": true
+    },
+    {
+      "PDF實際頁碼": 104,
+      "同一抽取器逐頁重取完全一致": true,
+      "PyMuPDF字序完全一致": false,
+      "PyMuPDF字元組成一致": true
+    },
+    {
+      "PDF實際頁碼": 157,
+      "同一抽取器逐頁重取完全一致": true,
+      "PyMuPDF字序完全一致": false,
+      "PyMuPDF字元組成一致": true
+    },
+    {
+      "PDF實際頁碼": 300,
+      "同一抽取器逐頁重取完全一致": true,
+      "PyMuPDF字序完全一致": false,
+      "PyMuPDF字元組成一致": true
+    },
+    {
+      "PDF實際頁碼": 435,
+      "同一抽取器逐頁重取完全一致": true,
+      "PyMuPDF字序完全一致": false,
+      "PyMuPDF字元組成一致": true
+    }
+  ]
+}
