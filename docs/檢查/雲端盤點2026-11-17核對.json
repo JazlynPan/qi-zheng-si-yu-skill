@@ -1,0 +1,253 @@
+{
+  "雲端份數": 30,
+  "帳本份數": 30,
+  "新增來源ID": [],
+  "帳本缺少於雲端ID": [],
+  "檔名不符數": 0,
+  "本機雜湊已核對數": 29,
+  "本機雜湊不符數": 0,
+  "本機頁數不符數": 0,
+  "限制": "雲端清單來自連接工具；本機雜湊核對不等於重新下載並核對遠端內容。本次未修改來源檔案。",
+  "明細": [
+    {
+      "書名": "張果星宗",
+      "雲端ID": "1qB9pIX1rQLBAhnn0SeBSjpG_KpW_AwIe",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "三辰通載",
+      "雲端ID": "1Svzv2nA7Gn1CW_cBArUhdGbkbEJmCltj",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "司臺曆數袖裡璇璣",
+      "雲端ID": "1ax9NbxdboqBkwx9wpaxUkmWYmVfRc5lu",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "歷學會通：元祿五星",
+      "雲端ID": "1UWOtT8HuPTzwHIjgAlx3VHcrHG4oI-Dl",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "星命總括",
+      "雲端ID": "13W6ht-Ar0a0lGtHB_b6MxWoZGMFfP6fj",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "天星選擇秘旨",
+      "雲端ID": "1bU_8vT4AuVH7sC07nZR8AlRCMZz0gkkg",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "增訂天官五星",
+      "雲端ID": "1F_SKRRfgKVKiTInAxGJ6GOX2jdtWHGk6",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "五星三命指南大全",
+      "雲端ID": "1qIhn24lqHW5BBDDF0AtAnBz3uU4UeY6b",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "太黅",
+      "雲端ID": "1K5psFePsX7T9dVIT5XVIfW-oU3at4R_y",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "五星捷要便覽",
+      "雲端ID": "1gmIfuhhQ1qNG3hvzSZGjKma54kkoctaI",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "五星玉鏡—",
+      "雲端ID": "1dBORrzCSgtmoD29kyPvKogPCwrUoD9Hi",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "三臺星平命書正宗",
+      "雲端ID": "1k2j9Jisgqv1nf2p2WNDVXPGXFfCFgeGy",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "七政四餘命學",
+      "雲端ID": "1FYe6-xCh_wQuF69WaTGQ9pTj8D_Nxc81",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "雲淵先生文選",
+      "雲端ID": "1Pd8Rlvise2WYwiROjCq_CEBqx2k8j2SS",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "天官果老抄本",
+      "雲端ID": "1m5HfdzJmR70Ld2Sq8YNwEofcyHk37T3B",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "唐：洞微歌",
+      "雲端ID": "17kzdxAqr5-XXTQRK60e6aTRnyVCpA8Vw",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "歷學會通：琴堂五星",
+      "雲端ID": "1oQOEiRyaWtvTVKP53y25zUf-l04TtEqP",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "御定五星精義",
+      "雲端ID": "1P6qrfrc3VfngVT8vdgPa3t6ifhHy3oyb",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "地理正義天星選擇",
+      "雲端ID": "1_7oLZcfN1YsCOs2nsp66cL6iT_Qn5JN6",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "楊國正七政四餘彙編",
+      "雲端ID": "1fLI_iFKoXIM9tatmZuQyCF8jJNCmu-Vf",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": null,
+      "本機頁數符合": null
+    },
+    {
+      "書名": "欽定天星七政造命日課握要",
+      "雲端ID": "1yFq4tIeh5tvlXfuKzsUx9__aoenUSwWp",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "璇璣抉微",
+      "雲端ID": "1WY4FJA265I7G5Ok0cX8rpMDTArhw4Sfk",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "源髓歌",
+      "雲端ID": "1TsdhZc9bkzUzKKMHTok4LBtqeg1Qtw9U",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "渾天寶鑑",
+      "雲端ID": "1bzpFqHU0cmymO3isnQDxI0weS-J-WKJk",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "河洛五星合參案例抄本",
+      "雲端ID": "1pxy6sXrGrAXLO2KPiZvE3hiA1XWf491X",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "望斗仙經",
+      "雲端ID": "18MFW5LlarnN2Vsctwfy8v0yQ0h8mj0q-",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "星平總會命海",
+      "雲端ID": "16JO54dOm_rvzMsa2D0OxlSTcrpks6CSK",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "星平大成",
+      "雲端ID": "1L6fQ4g0rpml4pFlc8mLQfpv7ZGlCutCC",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "星學綱目正傳",
+      "雲端ID": "1rGK82NKTfuulsrrzv5eYf8L5ziETOVSD",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    },
+    {
+      "書名": "星命說證正續合編",
+      "雲端ID": "1LAjFKQ0_egNHOwiX3MdVKoCmUAN-uVrI",
+      "仍在雲端清單": true,
+      "檔名符合": true,
+      "本機雜湊符合": true,
+      "本機頁數符合": true
+    }
+  ]
+}
