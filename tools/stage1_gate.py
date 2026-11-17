@@ -90,7 +90,7 @@ def main():
         status = '待人工核對' if errors else '來源與四欄通過'
         if not errors and args.apply:
             if original is None:
-                original = '#七政四餘\n' + ''.join('\n## '+h+'\n\n'+('無' if i==3 else '原文未提及')+'\n' for i,h in enumerate(HEADINGS))
+                original = '#七政四餘\n' + ''.join('\n## '+h+'\n\n'+(('無' if i==3 else '原文未提及') if record['fields'][FIELDS[i]].strip() in ['原文未提及','无','無'] else '')+'\n' for i,h in enumerate(HEADINGS))
                 pass  # 確認新卡不是完全同文後才登記新增。
             elif path.name not in created:
                 before.setdefault(path, original); updated.add(path.name)
