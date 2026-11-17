@@ -1,0 +1,32 @@
+{
+  "書名": "星學綱目正傳",
+  "PDF實際頁碼": 156,
+  "來源SHA256": "647dd4a5f503ef69db26a7bc14902a766a94dbec67e1ff09a44a86988139cca6",
+  "狀態": "OCR已執行，文字與欄位待原圖核對",
+  "注意": "引擎分數不是正確率；不得直接引用此檔作原文，不以辨識字序推定圖表關係。",
+  "解析度DPI": 300,
+  "原頁圖像物件數": 0,
+  "模型SHA256": {
+    "chi_tra": "529c5b5797d64b126065cd55f2bb4c7fd7b15790798091b1ff259941a829330b",
+    "chi_sim": "a5fcb6f0db1e1d6d8522f39db4e848f05984669172e584e8d76b6b3141e1f730",
+    "chi_tra_vert": "1df02a4b210e5c217b783819538b63e9dfe6904e2b5e53b62664f1b9f7a989d0"
+  },
+  "辨識結果": [
+    {
+      "模型": "chi_tra+chi_sim",
+      "版面參數": 11,
+      "原始TSV": "level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext\n1\t1\t0\t0\t0\t0\t0\t0\t2480\t3084\t-1\t\n",
+      "原始辨識文字": "",
+      "引擎平均分數": null,
+      "字塊": []
+    },
+    {
+      "模型": "chi_tra_vert",
+      "版面參數": 5,
+      "原始TSV": "level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext\n1\t1\t0\t0\t0\t0\t0\t0\t2480\t3084\t-1\t\n",
+      "原始辨識文字": "",
+      "引擎平均分數": null,
+      "字塊": []
+    }
+  ]
+}
