@@ -1,0 +1,21 @@
+{
+  "問題": "跨欄位錯誤去重導致12張卡片第二個相同引文欄位空白",
+  "修復": "僅在相同欄位判斷引文重複；只向空欄追加同一原書已核對引文",
+  "補充卡片數": 12,
+  "原有文字異動數": 0,
+  "新增或刪除卡片數": 0,
+  "卡片": [
+    "qi-zheng-si-yu/knowledge/交祿（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/天祿（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/官祿食神（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/拱祿（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/暗祿（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/朝元祿（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/正夾祿（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/生成祿（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/連珠祿（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/陌越（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/雙夾祿（星學綱目起例）.md",
+    "qi-zheng-si-yu/knowledge/駕（星學綱目起例）.md"
+  ]
+}

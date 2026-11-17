@@ -52,12 +52,12 @@ def additions(record, original):
         value = tw(value)
         # 同一來源與引文已存在即不重複追加，不刪改原有資料。
         marker = f'\n\n{source}：\n\n{value}\n'
-        if marker.strip() in result: continue
         heading = '## ' + HEADINGS[i]
         start = result.index(heading) + len(heading)
         end = result.find('\n## ', start)
         if end == -1: end = len(result)
         section = result[start:end]
+        if marker.strip() in section: continue
         blocks = re.split(r'(?=^《[^》]+》第)', section, flags=re.M)
         if any(block.startswith(source + '：') and norm(value) in norm(block.split('：', 1)[1]) for block in blocks): continue
         result = result[:end].rstrip('\n') + marker + result[end:]
