@@ -11,6 +11,9 @@ values = {(x['PDF實際頁碼'], x['年欄']): x['聯列下方字形'] for x in 
 authorized = read('歲殿八筆授權修字與四欄重看.json')
 for record in authorized['四張重看']:
     values[(record['PDF實際頁碼'], record['年欄'])] = record['原圖可辨下方字']
+latest = read('歲殿聯列最新裁決.json')
+for record in latest['明細']:
+    values[(record['PDF實際頁碼'], record['年欄'])] = record['聯列下方字形']
 rows = []
 for old in base['明細']:
     row = dict(old)
@@ -23,13 +26,14 @@ for old in base['明細']:
     raw = values.get(key, row['聯列下方字形'])
     row['聯列下方字形'] = raw
     row['字形狀態'] = ('字形仍待確認' if raw == '原字未確認' else
-        '字形相同；歸屬未確認' if raw == row['卡片字值'] else
-        '字形差異候選；歸屬未確認')
+        '字形相同；使用者已確認聯列共值，跨頁仍待逐欄複查' if raw == row['卡片字值'] else
+        '字形差異候選；共值對應待核')
+    row['歸屬狀態'] = '依使用者確認：歲殿右／登籍左聯列共值；跨頁對應仍待核'
     rows.append(row)
 counts = {key: sum(r['字形狀態'] == key for r in rows)
           for key in sorted({r['字形狀態'] for r in rows})}
 report = {'書名': '星學綱目正傳', '卡片範圍數': len(rows), '分類統計': counts,
-          '證據限制': '人工圖像觀察＋腳本比對；字形相同不代表可獨立分卡；歸屬仍未確認，非驗收通過。',
+          '證據限制': '依使用者最新聯列裁決更新；字形檢查不等於跨頁全驗收，73–96頁仍須逐欄核對。',
           '卡片異動數': 0, '明細': rows}
 (ROOT / 'docs/檢查/綱目歲殿登籍69卡字形續核結果.json').write_text(
     json.dumps(report, ensure_ascii=False, indent=2) + '\n')
