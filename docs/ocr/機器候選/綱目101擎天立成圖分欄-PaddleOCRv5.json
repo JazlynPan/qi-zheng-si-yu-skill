@@ -1,0 +1,802 @@
+{
+  "狀態": "OCR候選，未校讀，不得直接入卡",
+  "原圖SHA256": "8840806fcdd6a588c7a33c0e5e2b66a0c3a095b7742b6d1ff61b04bee93f73a7",
+  "原圖檔名": "綱目-101-原圖0.png",
+  "說明": "保留模型原字、框位、分數；分數不等於原文正確率；未微調。",
+  "裁切設定": [
+    {
+      "name": "擎天立成圖由右第1組雙列",
+      "box": [
+        335,
+        150,
+        399,
+        710
+      ],
+      "scale": 3
+    },
+    {
+      "name": "擎天立成圖由右第2組雙列",
+      "box": [
+        276,
+        150,
+        340,
+        710
+      ],
+      "scale": 3
+    },
+    {
+      "name": "擎天立成圖由右第3組雙列",
+      "box": [
+        217,
+        150,
+        281,
+        710
+      ],
+      "scale": 3
+    },
+    {
+      "name": "擎天立成圖由右第4組雙列",
+      "box": [
+        158,
+        150,
+        222,
+        710
+      ],
+      "scale": 3
+    },
+    {
+      "name": "擎天立成圖由右第5組雙列",
+      "box": [
+        99,
+        150,
+        163,
+        710
+      ],
+      "scale": 3
+    },
+    {
+      "name": "擎天立成圖由右第6組雙列",
+      "box": [
+        40,
+        150,
+        104,
+        710
+      ],
+      "scale": 3
+    }
+  ],
+  "框位說明": "裁切模式的框位相對於放大後的局部圖，依裁切設定還原；不是全頁框位。",
+  "結果": [
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              58,
+              43
+            ],
+            [
+              157,
+              42
+            ],
+            [
+              163,
+              1221
+            ],
+            [
+              64,
+              1222
+            ]
+          ],
+          [
+            [
+              6,
+              1378
+            ],
+            [
+              144,
+              1378
+            ],
+            [
+              144,
+              1558
+            ],
+            [
+              6,
+              1558
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "甲庚乙辛丙壬丁戊癸巳",
+          "子"
+        ],
+        "rec_scores": [
+          0.9187355041503906,
+          0.6325624585151672
+        ],
+        "rec_polys": [
+          [
+            [
+              58,
+              43
+            ],
+            [
+              157,
+              42
+            ],
+            [
+              163,
+              1221
+            ],
+            [
+              64,
+              1222
+            ]
+          ],
+          [
+            [
+              6,
+              1378
+            ],
+            [
+              144,
+              1378
+            ],
+            [
+              144,
+              1558
+            ],
+            [
+              6,
+              1558
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            58,
+            42,
+            163,
+            1222
+          ],
+          [
+            6,
+            1378,
+            144,
+            1558
+          ]
+        ]
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [],
+        "rec_scores": [],
+        "rec_polys": [],
+        "rec_boxes": []
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              83,
+              36
+            ],
+            [
+              179,
+              37
+            ],
+            [
+              176,
+              409
+            ],
+            [
+              80,
+              408
+            ]
+          ],
+          [
+            [
+              113,
+              389
+            ],
+            [
+              126,
+              389
+            ],
+            [
+              126,
+              397
+            ],
+            [
+              113,
+              397
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "庚辛毛",
+          ""
+        ],
+        "rec_scores": [
+          0.78066086769104,
+          0.0
+        ],
+        "rec_polys": [
+          [
+            [
+              83,
+              36
+            ],
+            [
+              179,
+              37
+            ],
+            [
+              176,
+              409
+            ],
+            [
+              80,
+              408
+            ]
+          ],
+          [
+            [
+              113,
+              389
+            ],
+            [
+              126,
+              389
+            ],
+            [
+              126,
+              397
+            ],
+            [
+              113,
+              397
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            80,
+            36,
+            179,
+            409
+          ],
+          [
+            113,
+            389,
+            126,
+            397
+          ]
+        ]
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              11,
+              46
+            ],
+            [
+              101,
+              45
+            ],
+            [
+              104,
+              671
+            ],
+            [
+              14,
+              672
+            ]
+          ],
+          [
+            [
+              82,
+              39
+            ],
+            [
+              185,
+              39
+            ],
+            [
+              185,
+              657
+            ],
+            [
+              82,
+              657
+            ]
+          ],
+          [
+            [
+              7,
+              848
+            ],
+            [
+              104,
+              847
+            ],
+            [
+              110,
+              1443
+            ],
+            [
+              13,
+              1444
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "开于寅亥成",
+          "已成辛任",
+          "已卯午根味"
+        ],
+        "rec_scores": [
+          0.4841633439064026,
+          0.4848441779613495,
+          0.6292537450790405
+        ],
+        "rec_polys": [
+          [
+            [
+              11,
+              46
+            ],
+            [
+              101,
+              45
+            ],
+            [
+              104,
+              671
+            ],
+            [
+              14,
+              672
+            ]
+          ],
+          [
+            [
+              82,
+              39
+            ],
+            [
+              185,
+              39
+            ],
+            [
+              185,
+              657
+            ],
+            [
+              82,
+              657
+            ]
+          ],
+          [
+            [
+              7,
+              848
+            ],
+            [
+              104,
+              847
+            ],
+            [
+              110,
+              1443
+            ],
+            [
+              13,
+              1444
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            11,
+            45,
+            104,
+            672
+          ],
+          [
+            82,
+            39,
+            185,
+            657
+          ],
+          [
+            7,
+            847,
+            110,
+            1444
+          ]
+        ]
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              115,
+              38
+            ],
+            [
+              192,
+              39
+            ],
+            [
+              186,
+              881
+            ],
+            [
+              102,
+              879
+            ]
+          ],
+          [
+            [
+              21,
+              1386
+            ],
+            [
+              192,
+              1408
+            ],
+            [
+              185,
+              1680
+            ],
+            [
+              0,
+              1680
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "丙壬丁齿巳顺辛",
+          "年在酉"
+        ],
+        "rec_scores": [
+          0.6638041138648987,
+          0.8539935946464539
+        ],
+        "rec_polys": [
+          [
+            [
+              115,
+              38
+            ],
+            [
+              192,
+              39
+            ],
+            [
+              186,
+              881
+            ],
+            [
+              102,
+              879
+            ]
+          ],
+          [
+            [
+              21,
+              1386
+            ],
+            [
+              192,
+              1408
+            ],
+            [
+              185,
+              1680
+            ],
+            [
+              0,
+              1680
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            102,
+            38,
+            192,
+            881
+          ],
+          [
+            0,
+            1386,
+            192,
+            1680
+          ]
+        ]
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              123,
+              74
+            ],
+            [
+              157,
+              68
+            ],
+            [
+              171,
+              139
+            ],
+            [
+              137,
+              145
+            ]
+          ],
+          [
+            [
+              150,
+              166
+            ],
+            [
+              158,
+              166
+            ],
+            [
+              158,
+              189
+            ],
+            [
+              150,
+              189
+            ]
+          ],
+          [
+            [
+              94,
+              1092
+            ],
+            [
+              108,
+              1080
+            ],
+            [
+              116,
+              1090
+            ],
+            [
+              102,
+              1102
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "",
+          ".",
+          "A"
+        ],
+        "rec_scores": [
+          0.0,
+          0.5048336982727051,
+          0.40010759234428406
+        ],
+        "rec_polys": [
+          [
+            [
+              123,
+              74
+            ],
+            [
+              157,
+              68
+            ],
+            [
+              171,
+              139
+            ],
+            [
+              137,
+              145
+            ]
+          ],
+          [
+            [
+              150,
+              166
+            ],
+            [
+              158,
+              166
+            ],
+            [
+              158,
+              189
+            ],
+            [
+              150,
+              189
+            ]
+          ],
+          [
+            [
+              94,
+              1092
+            ],
+            [
+              108,
+              1080
+            ],
+            [
+              116,
+              1090
+            ],
+            [
+              102,
+              1102
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            123,
+            68,
+            171,
+            145
+          ],
+          [
+            150,
+            166,
+            158,
+            189
+          ],
+          [
+            94,
+            1080,
+            116,
+            1102
+          ]
+        ]
+      }
+    }
+  ]
+}
