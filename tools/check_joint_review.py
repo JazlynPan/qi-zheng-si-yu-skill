@@ -8,6 +8,9 @@ def read(name):
 base = read('綱目歲殿登籍69卡逐張複核.json')
 extra = read('綱目聯列29卡字形續核證據.json')
 values = {(x['PDF實際頁碼'], x['年欄']): x['聯列下方字形'] for x in extra['明細']}
+authorized = read('歲殿八筆授權修字與四欄重看.json')
+for record in authorized['四張重看']:
+    values[(record['PDF實際頁碼'], record['年欄'])] = record['原圖可辨下方字']
 rows = []
 for old in base['明細']:
     row = dict(old)

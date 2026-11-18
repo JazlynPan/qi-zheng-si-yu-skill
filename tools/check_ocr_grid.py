@@ -22,7 +22,7 @@ def main():
    if not path.is_file():cardmissing.append(str(path.relative_to(root)))
  result={'校讀證據檔數':len(proofs),'宮字數':len(houses),'星名字數':len(stars),'圖格數':len(houses)*len(stars),'已錄文字註數':sum('可確認文字註'in v for v in records.values()),'已錄曜名數':sum('可確認變曜名字'in v for v in records.values()),'未確認文字註數':sum('可確認文字註'in r['待核對欄']for r in pending),'未確認曜名數':sum('可確認變曜名字'in r['待核對欄']for r in pending),'卡片缺少數':len(cardmissing),'缺少卡片':cardmissing,'待核對':pending,'限制':'132格均有可確認文字，不等於整圖已轉錄；符號涵義未作判讀，未確認字不從他書補足。'}
  (root/'docs/檢查/命海16逐格核對.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
- lines=['# 命海第16頁待核字列','','來源：《星平總會命海》PDF第16頁。由 tools/check_ocr_grid.py 彙整對圖校讀紀錄，不是自動辨字結果。','','132格已有卡片；118組文字註、113組曜名已轉錄。14組文字註、19組曜名仍待核對，未解釋○●，不算整圖完成。','','|宮字|星名字|待核對欄|已確認文字|','|---|---|---|---|']
+ lines=['# 命海第16頁待核字列','','來源：《星平總會命海》PDF第16頁。由 tools/check_ocr_grid.py 彙整對圖校讀紀錄，不是自動辨字結果。','',f"{result['圖格數']}格已有卡片；{result['已錄文字註數']}組文字註、{result['已錄曜名數']}組曜名已轉錄。{result['未確認文字註數']}組文字註、{result['未確認曜名數']}組曜名仍待核對，未解釋○●，不算整圖完成。",'','|宮字|星名字|待核對欄|已確認文字|','|---|---|---|---|']
  for r in pending:lines.append('|'+r['宮字']+'|'+r['星名字']+'|'+'、'.join(r['待核對欄'])+'|'+'；'.join(k+'：'+v for k,v in r['已確認'].items())+'|')
  (root/'docs/ocr/命海16待核字列.md').write_text('\n'.join(lines)+'\n');print(json.dumps({k:v for k,v in result.items()if k not in ['待核對','缺少卡片']},ensure_ascii=False))
 if __name__=='__main__':main()
