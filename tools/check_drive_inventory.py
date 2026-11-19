@@ -7,14 +7,14 @@ def main():
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument('--snapshot',type=Path,required=True);p.add_argument('--ledger',type=Path,default=Path('docs/來源清單.md'))
  p.add_argument('--report',type=Path,required=True);p.add_argument('--local-manifest',type=Path,action='append',default=[])
- a=p.parse_args();files=json.loads(a.snapshot.read_text());remote={r['id']:r for r in files};ledger={};local={}
+ a=p.parse_args();files=json.loads(a.snapshot.read_text());files=files['檔案']if isinstance(files,dict)else files;remote={r['id']:r for r in files};ledger={};local={}
  for line in a.ledger.read_text().splitlines():
   if not line.startswith('|') or 'https://'not in line:continue
   c=line.strip('|').split('|');m=re.search(r'/(?:d|folders)/([^/?]+)',c[2])
   if m:ledger[m[1]]=c
  for manifest in a.local_manifest:
   for r in json.loads(manifest.read_text()):
-   if r.get('pdf'):local[r.get('id',r.get('name'))]=Path(r['pdf'])
+   if r.get('pdf')or r.get('file'):local[r.get('id',r.get('name'))]=Path(r.get('pdf')or r['file'])
  rows=[]
  for fid,c in ledger.items():
   r=remote.get(fid);path=local.get(fid)or local.get(c[1]);sha=None;pages=None
