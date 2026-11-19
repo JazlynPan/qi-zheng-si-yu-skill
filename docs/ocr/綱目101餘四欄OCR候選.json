@@ -1,0 +1,581 @@
+{
+  "狀態": "OCR候選，未校讀，不得直接入卡",
+  "原圖SHA256": "8840806fcdd6a588c7a33c0e5e2b66a0c3a095b7742b6d1ff61b04bee93f73a7",
+  "原圖檔名": "綱目-101-原圖0.png",
+  "說明": "保留模型原字、框位、分數；分數不等於原文正確率；未微調。",
+  "裁切設定": [
+    {
+      "name": "第101頁物理欄3",
+      "box": [
+        220,
+        130,
+        280,
+        735
+      ],
+      "scale": 4
+    },
+    {
+      "name": "第101頁物理欄4",
+      "box": [
+        165,
+        130,
+        225,
+        735
+      ],
+      "scale": 4
+    },
+    {
+      "name": "第101頁物理欄5",
+      "box": [
+        110,
+        130,
+        170,
+        735
+      ],
+      "scale": 4
+    },
+    {
+      "name": "第101頁物理欄6",
+      "box": [
+        52,
+        130,
+        115,
+        735
+      ],
+      "scale": 4
+    }
+  ],
+  "框位說明": "裁切模式的框位相對於放大後的局部圖，依裁切設定還原；不是全頁框位。",
+  "結果": [
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              98,
+              131
+            ],
+            [
+              216,
+              129
+            ],
+            [
+              223,
+              602
+            ],
+            [
+              104,
+              604
+            ]
+          ],
+          [
+            [
+              100,
+              880
+            ],
+            [
+              240,
+              883
+            ],
+            [
+              228,
+              1984
+            ],
+            [
+              80,
+              1981
+            ]
+          ],
+          [
+            [
+              0,
+              1948
+            ],
+            [
+              202,
+              1948
+            ],
+            [
+              202,
+              2330
+            ],
+            [
+              0,
+              2330
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "庚辛王",
+          "戊癸巳甲乙丙丁",
+          "年包"
+        ],
+        "rec_scores": [
+          0.7683677673339844,
+          0.8041062355041504,
+          0.5676196813583374
+        ],
+        "rec_polys": [
+          [
+            [
+              98,
+              131
+            ],
+            [
+              216,
+              129
+            ],
+            [
+              223,
+              602
+            ],
+            [
+              104,
+              604
+            ]
+          ],
+          [
+            [
+              100,
+              880
+            ],
+            [
+              240,
+              883
+            ],
+            [
+              228,
+              1984
+            ],
+            [
+              80,
+              1981
+            ]
+          ],
+          [
+            [
+              0,
+              1948
+            ],
+            [
+              202,
+              1948
+            ],
+            [
+              202,
+              2330
+            ],
+            [
+              0,
+              2330
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            98,
+            129,
+            223,
+            604
+          ],
+          [
+            80,
+            880,
+            240,
+            1984
+          ],
+          [
+            0,
+            1948,
+            202,
+            2330
+          ]
+        ]
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              8,
+              151
+            ],
+            [
+              96,
+              151
+            ],
+            [
+              96,
+              285
+            ],
+            [
+              8,
+              285
+            ]
+          ],
+          [
+            [
+              143,
+              954
+            ],
+            [
+              149,
+              960
+            ],
+            [
+              145,
+              965
+            ],
+            [
+              139,
+              959
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "F",
+          "-"
+        ],
+        "rec_scores": [
+          0.47448545694351196,
+          0.9320945739746094
+        ],
+        "rec_polys": [
+          [
+            [
+              8,
+              151
+            ],
+            [
+              96,
+              151
+            ],
+            [
+              96,
+              285
+            ],
+            [
+              8,
+              285
+            ]
+          ],
+          [
+            [
+              143,
+              954
+            ],
+            [
+              149,
+              960
+            ],
+            [
+              145,
+              965
+            ],
+            [
+              139,
+              959
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            8,
+            151,
+            96,
+            285
+          ],
+          [
+            139,
+            954,
+            149,
+            965
+          ]
+        ]
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              110,
+              129
+            ],
+            [
+              225,
+              130
+            ],
+            [
+              210,
+              1273
+            ],
+            [
+              96,
+              1272
+            ]
+          ],
+          [
+            [
+              63,
+              1227
+            ],
+            [
+              69,
+              1227
+            ],
+            [
+              69,
+              1238
+            ],
+            [
+              63,
+              1238
+            ]
+          ],
+          [
+            [
+              0,
+              1474
+            ],
+            [
+              112,
+              1474
+            ],
+            [
+              112,
+              2024
+            ],
+            [
+              0,
+              2024
+            ]
+          ],
+          [
+            [
+              0,
+              1936
+            ],
+            [
+              215,
+              1934
+            ],
+            [
+              218,
+              2345
+            ],
+            [
+              0,
+              2347
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "丙壬丁岁已庚辛",
+          "",
+          "辰卵",
+          "年在酉"
+        ],
+        "rec_scores": [
+          0.6160339117050171,
+          0.0,
+          0.6697050333023071,
+          0.8118395209312439
+        ],
+        "rec_polys": [
+          [
+            [
+              110,
+              129
+            ],
+            [
+              225,
+              130
+            ],
+            [
+              210,
+              1273
+            ],
+            [
+              96,
+              1272
+            ]
+          ],
+          [
+            [
+              63,
+              1227
+            ],
+            [
+              69,
+              1227
+            ],
+            [
+              69,
+              1238
+            ],
+            [
+              63,
+              1238
+            ]
+          ],
+          [
+            [
+              0,
+              1474
+            ],
+            [
+              112,
+              1474
+            ],
+            [
+              112,
+              2024
+            ],
+            [
+              0,
+              2024
+            ]
+          ],
+          [
+            [
+              0,
+              1936
+            ],
+            [
+              215,
+              1934
+            ],
+            [
+              218,
+              2345
+            ],
+            [
+              0,
+              2347
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            96,
+            129,
+            225,
+            1273
+          ],
+          [
+            63,
+            1227,
+            69,
+            1238
+          ],
+          [
+            0,
+            1474,
+            112,
+            2024
+          ],
+          [
+            0,
+            1934,
+            218,
+            2347
+          ]
+        ]
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [],
+        "rec_scores": [],
+        "rec_polys": [],
+        "rec_boxes": []
+      }
+    }
+  ]
+}
