@@ -6,7 +6,7 @@ from pathlib import Path
 sys.path.insert(0,'tools')
 from review_helpers import *
 # 無法定位的字：只交付引用頁範圍圖，明說未圈到字，不偽造字位。
-p=D/'形近字批量修訂清單.json';d=json.loads(p.read_text());fallback=0
+p=D/'形近字批量修訂清單.json';d=json.loads(p.read_text());fallback=sum(r.get('定位')=='僅附引用頁紅框；未定位字位'for r in d['明細'])
 for r in d['明細']:
  if r.get('原圖'):continue
  doc=pdf(r['書名'])
