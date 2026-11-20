@@ -1,0 +1,365 @@
+{
+  "狀態": "OCR候選，未校讀，不得直接入卡",
+  "原圖SHA256": "3142c3b685c1dec747462748baf0cb5a5b805d91e1683344002520d6dc8f7e52",
+  "原圖檔名": "綱目-97-原圖0.png",
+  "說明": "保留模型原字、框位、分數；分數不等於原文正確率；未微調。",
+  "裁切設定": [
+    {
+      "name": "天嗣下注整格",
+      "box": [
+        0,
+        580,
+        51,
+        934
+      ],
+      "scale": 4
+    },
+    {
+      "name": "天嗣下注右列",
+      "box": [
+        22,
+        580,
+        51,
+        934
+      ],
+      "scale": 4
+    },
+    {
+      "name": "天嗣下注左列",
+      "box": [
+        0,
+        580,
+        24,
+        934
+      ],
+      "scale": 4
+    }
+  ],
+  "框位說明": "裁切模式的框位相對於放大後的局部圖，依裁切設定還原；不是全頁框位。",
+  "結果": [
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              0,
+              26
+            ],
+            [
+              102,
+              26
+            ],
+            [
+              100,
+              1406
+            ],
+            [
+              0,
+              1406
+            ]
+          ],
+          [
+            [
+              91,
+              17
+            ],
+            [
+              204,
+              18
+            ],
+            [
+              202,
+              1412
+            ],
+            [
+              78,
+              1411
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "但要生復生之為生也",
+          "是子孫星以我生他者"
+        ],
+        "rec_scores": [
+          0.8859792947769165,
+          0.8494572639465332
+        ],
+        "rec_polys": [
+          [
+            [
+              0,
+              26
+            ],
+            [
+              102,
+              26
+            ],
+            [
+              100,
+              1406
+            ],
+            [
+              0,
+              1406
+            ]
+          ],
+          [
+            [
+              91,
+              17
+            ],
+            [
+              204,
+              18
+            ],
+            [
+              202,
+              1412
+            ],
+            [
+              78,
+              1411
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            0,
+            26,
+            102,
+            1406
+          ],
+          [
+            78,
+            17,
+            204,
+            1412
+          ]
+        ]
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              6,
+              15
+            ],
+            [
+              113,
+              15
+            ],
+            [
+              108,
+              1413
+            ],
+            [
+              1,
+              1413
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "是子孫星以我生的者"
+        ],
+        "rec_scores": [
+          0.821311891078949
+        ],
+        "rec_polys": [
+          [
+            [
+              6,
+              15
+            ],
+            [
+              113,
+              15
+            ],
+            [
+              108,
+              1413
+            ],
+            [
+              1,
+              1413
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            1,
+            15,
+            113,
+            1413
+          ]
+        ]
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              1,
+              37
+            ],
+            [
+              83,
+              27
+            ],
+            [
+              96,
+              212
+            ],
+            [
+              24,
+              222
+            ]
+          ],
+          [
+            [
+              0,
+              166
+            ],
+            [
+              96,
+              167
+            ],
+            [
+              93,
+              1410
+            ],
+            [
+              0,
+              1409
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "但",
+          "要生復生之為主也"
+        ],
+        "rec_scores": [
+          0.9686301350593567,
+          0.8226946592330933
+        ],
+        "rec_polys": [
+          [
+            [
+              1,
+              37
+            ],
+            [
+              83,
+              27
+            ],
+            [
+              96,
+              212
+            ],
+            [
+              24,
+              222
+            ]
+          ],
+          [
+            [
+              0,
+              166
+            ],
+            [
+              96,
+              167
+            ],
+            [
+              93,
+              1410
+            ],
+            [
+              0,
+              1409
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            1,
+            27,
+            96,
+            222
+          ],
+          [
+            0,
+            166,
+            96,
+            1410
+          ]
+        ]
+      }
+    }
+  ]
+}
