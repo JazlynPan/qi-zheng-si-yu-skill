@@ -1,0 +1,277 @@
+{
+  "狀態": "OCR候選，未校讀，不得直接入卡",
+  "原圖SHA256": "8840806fcdd6a588c7a33c0e5e2b66a0c3a095b7742b6d1ff61b04bee93f73a7",
+  "原圖檔名": "綱目-101-原圖0.png",
+  "說明": "保留模型原字、框位、分數；分數不等於原文正確率；未微調。",
+  "裁切設定": [
+    {
+      "name": "年在未第4項連同上下列",
+      "box": [
+        162,
+        486,
+        217,
+        582
+      ],
+      "scale": 4
+    },
+    {
+      "name": "年在未第4項",
+      "box": [
+        163,
+        549,
+        216,
+        582
+      ],
+      "scale": 4
+    }
+  ],
+  "框位說明": "裁切模式的框位相對於放大後的局部圖，依裁切設定還原；不是全頁框位。",
+  "結果": [
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              16,
+              0
+            ],
+            [
+              186,
+              0
+            ],
+            [
+              181,
+              98
+            ],
+            [
+              11,
+              90
+            ]
+          ],
+          [
+            [
+              2,
+              91
+            ],
+            [
+              220,
+              104
+            ],
+            [
+              220,
+              275
+            ],
+            [
+              0,
+              262
+            ]
+          ],
+          [
+            [
+              0,
+              258
+            ],
+            [
+              220,
+              247
+            ],
+            [
+              220,
+              384
+            ],
+            [
+              7,
+              384
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "师了",
+          "午甲",
+          "丙"
+        ],
+        "rec_scores": [
+          0.30151069164276123,
+          0.9611488580703735,
+          0.4862077236175537
+        ],
+        "rec_polys": [
+          [
+            [
+              16,
+              0
+            ],
+            [
+              186,
+              0
+            ],
+            [
+              181,
+              98
+            ],
+            [
+              11,
+              90
+            ]
+          ],
+          [
+            [
+              2,
+              91
+            ],
+            [
+              220,
+              104
+            ],
+            [
+              220,
+              275
+            ],
+            [
+              0,
+              262
+            ]
+          ],
+          [
+            [
+              0,
+              258
+            ],
+            [
+              220,
+              247
+            ],
+            [
+              220,
+              384
+            ],
+            [
+              7,
+              384
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            11,
+            0,
+            186,
+            98
+          ],
+          [
+            0,
+            91,
+            220,
+            275
+          ],
+          [
+            0,
+            247,
+            220,
+            384
+          ]
+        ]
+      }
+    },
+    {
+      "res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              14,
+              22
+            ],
+            [
+              194,
+              13
+            ],
+            [
+              199,
+              129
+            ],
+            [
+              19,
+              132
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "限内"
+        ],
+        "rec_scores": [
+          0.604118287563324
+        ],
+        "rec_polys": [
+          [
+            [
+              14,
+              22
+            ],
+            [
+              194,
+              13
+            ],
+            [
+              199,
+              129
+            ],
+            [
+              19,
+              132
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            14,
+            13,
+            199,
+            132
+          ]
+        ]
+      }
+    }
+  ]
+}
