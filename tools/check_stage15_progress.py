@@ -5,8 +5,8 @@ from validate_suidian_entry_20261120 import anchors
 import argparse,json,re,subprocess
 R=Path(__file__).resolve().parents[1]
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--output',required=True);ap.add_argument('--expected-items',type=int,required=True);ap.add_argument('--expected-new-card',action='append',default=[]);args=ap.parse_args()
- changed=subprocess.check_output(['git','diff','HEAD','--name-only','--diff-filter=MD','--','qi-zheng-si-yu/knowledge'],cwd=R).decode();added=subprocess.check_output(['git','-c','core.quotePath=false','ls-files','--others','--exclude-standard','--','qi-zheng-si-yu/knowledge'],cwd=R).decode();staged=subprocess.check_output(['git','-c','core.quotePath=false','diff','HEAD','--name-only','--diff-filter=A','--','qi-zheng-si-yu/knowledge'],cwd=R).decode();assert not changed;assert set(added.splitlines()+staged.splitlines())=={'qi-zheng-si-yu/knowledge/'+x for x in args.expected_new_card}
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--output',required=True);ap.add_argument('--expected-items',type=int,required=True);ap.add_argument('--expected-new-card',action='append',default=[]);ap.add_argument('--expected-changed-card',action='append',default=[]);args=ap.parse_args()
+ changed=subprocess.check_output(['git','-c','core.quotePath=false','diff','HEAD','--name-only','--diff-filter=MD','--','qi-zheng-si-yu/knowledge'],cwd=R).decode();added=subprocess.check_output(['git','-c','core.quotePath=false','ls-files','--others','--exclude-standard','--','qi-zheng-si-yu/knowledge'],cwd=R).decode();staged=subprocess.check_output(['git','-c','core.quotePath=false','diff','HEAD','--name-only','--diff-filter=A','--','qi-zheng-si-yu/knowledge'],cwd=R).decode();assert set(changed.splitlines())=={'qi-zheng-si-yu/knowledge/'+x for x in args.expected_changed_card};assert set(added.splitlines()+staged.splitlines())=={'qi-zheng-si-yu/knowledge/'+x for x in args.expected_new_card}
  entry=(R/'docs/待你處理.md').read_text();groups={s.splitlines()[0]:len(re.findall(r'^- ',s,re.M))for s in re.split(r'^## ',entry,flags=re.M)[1:]};assert sum(groups.values())==args.expected_items
  errors=[];count=0;cache={}
  for p in R.rglob('*.md'):
@@ -19,5 +19,5 @@ def main():
    if len(parts)==2 and parts[1]and q.suffix=='.md':
     if q not in cache:cache[q]=anchors(q)
     if unquote(parts[1])not in cache[q]:errors.append([str(p.relative_to(R)),t,'錨點不存在'])
- report={'日期':'2026-11-20','證據等級':'E0，文件與唯讀檢查，不是原字裁決','卡片總數':len(list((R/'qi-zheng-si-yu/knowledge').glob('*.md'))),'既有卡片異動':0,'新增卡數':len(args.expected_new_card),'待處理項數':sum(groups.values()),'各組數':groups,'本機連結數':count,'失效數':len(errors),'失效清單':errors,'狀態檔行數':len((R/'docs/狀態.md').read_text().splitlines())};(R/args.output).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False));assert not errors
+ report={'日期':'2026-11-20','證據等級':'E0，文件與唯讀檢查，不是原字裁決','卡片總數':len(list((R/'qi-zheng-si-yu/knowledge').glob('*.md'))),'既有卡片授權異動':len(args.expected_changed_card),'新增卡數':len(args.expected_new_card),'待處理項數':sum(groups.values()),'各組數':groups,'本機連結數':count,'失效數':len(errors),'失效清單':errors,'狀態檔行數':len((R/'docs/狀態.md').read_text().splitlines())};(R/args.output).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False));assert not errors
 if __name__=='__main__':main()
