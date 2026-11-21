@@ -1,0 +1,692 @@
+{
+  "日期": "2026-11-21",
+  "基準提交": "4b18d9724ff8713204896935fac43e976646ffc9",
+  "目前提交": "6c38df7508537d14fc8b8be41e22590370f133d6",
+  "基準卡數": 19831,
+  "新增卡數": 164,
+  "原有卡異動": 0,
+  "卡片刪除": 0,
+  "新卡格式錯誤": 0,
+  "本批新增空殼": 0,
+  "卡片總數": 19995,
+  "R1後新增卡數": 6163,
+  "目前缺載保留卡數": 3,
+  "目前缺載保留清單": [
+    {
+      "檔名": "歲殿圖列·戊寅（星學綱目圖說下）.md",
+      "所屬書": [
+        "星學綱目正傳"
+      ]
+    },
+    {
+      "檔名": "登籍圖列·己丑（星學綱目圖說下）.md",
+      "所屬書": [
+        "星學綱目正傳"
+      ]
+    },
+    {
+      "檔名": "登籍圖列·戊寅（星學綱目圖說下）.md",
+      "所屬書": [
+        "星學綱目正傳"
+      ]
+    }
+  ],
+  "明細": [
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/五鬼圖列·第76頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "1ce02fc4a56ea8a0b3bd3a2b8bd0bcfa1668ffbea64af30f9c207885f29d2181"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/五鬼圖列·第78頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "9563e5d94ff068c0fbfc6b20ad003989fe73701f7e8041121f747d4057271f05"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/五鬼圖列·第79頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "9aa45b2a96c7feb4e1597cd1165102beb0c9249226a49a160d7744ba7d5ba1ef"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/五鬼圖列·第81頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "590a7a3a978453353062b97d5a3f3aebcfd1b12985b4fc73bb404c78f2fd03f2"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/伏尸圖列·第76頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "53865b657222ec6acdceb93295c9c8a3eec477d685890665b0d5a5e740643ba1"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/伏尸圖列·第78頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "509a6bb1e17d35a7d1aae33e36a7a3fe1f47b56656187e8beac28a9601b2f622"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/伏尸圖列·第80頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "c2b6eef33ae3579188fd7fbefea073da86d9e4ed8bdefe28bd82b0db749d6d39"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/伏尸圖列·第82頁辰字圈（星學綱目圖說下）.md",
+      "SHA256": "6abf6473b5167b544ae77030455a5ee30aece22278d3a6cd8996b90a063ce1cc"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/六害圖列·第75頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "a5eef10dc8be5c8fef9279e3ecf3eb75a8dc0702525f4e5153a3649a8adfb48a"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/六害圖列·第77頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "aeb9a23a825fce62b4bee3b440cc66e1a59a6902b46cdc4558860e56ef20e8d7"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/六害圖列·第80頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "934116e7c4066354ecc21c57b6e3ed732c2779f0a2c39a979179d16747a2ef0d"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/六害圖列·第82頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "189e57f2e2c157f598b3f255dd9c65caa06695be08c7a3538ed6da21d73cf3a3"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/劍鋒圖列·第76頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "506a5f954eb28723e54b9309fefda8aa484454e6328db4f97cf601c5611ffb45"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/劍鋒圖列·第78頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "2b0dcfe3dfd21f60d3dd6b8c2972fd8435aa283b615ae00453604000b6774a88"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/劍鋒圖列·第80頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "c61783771afae3aeb44b3298109605469ae7fbff0ecc696687c3a416d740c378"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/劍鋒圖列·第82頁辰字圈（星學綱目圖說下）.md",
+      "SHA256": "7ff84bc6241003f8e0cf2f94d544f33b318798665dd292091b22c4e0e11a695e"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/劫杀圖列·第82頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "b1b79ad3506231d94a3213a75cea6b32b475bbbcc0f4f2e08bd610ed5f36165e"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/劫殺圖列·第76頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "77f1d986744c69c5ad4998e6b2f3f6ce1613d152f96394f0158c5b2195ea9d25"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/劫殺圖列·第79頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "f4ed3beefeeaca8495bcd5386f0a4a688aaeb20da1d6c6a6731f173cfda2e914"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/劫煞圖列·第77頁亥字圈（星學綱目圖說下）.md",
+      "SHA256": "402ece7a1239756b201c659dcd682d8f3f80a1f6ff50f66aafccf5e9d8ca0cd3"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/勾絞圖列·第76頁辰字圈（星學綱目圖說下）.md",
+      "SHA256": "ee58e5aa100ecc7c0e98fdc05f174222c4976e569423c992cb91c2dfcdc17d0f"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/勾絞圖列·第78頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "41e14f9e072a58e8d71a362046af78f249b8c711127c0b305755538e083741c8"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/勾絞圖列·第80頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "0f327f76e560a311b07c786224eae66d97fad488c0227bea38917cb03dd809e5"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/勾絞圖列·第81頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "7845d4a2ddf5824e980704feed9d627a43e3370c46330bc205a3e75cfe4c788e"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/卷舌圖列·第79頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "823a7b87be5fca2d3837448d516cfdff4254bfd375b75c9b4ff1409c61db0e6e"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/卷舌圖列·第82頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "3a0fd27c720642e0445371f7633b6ffae06fbc0e36c60d64e06d7c28d6f20a1f"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/吊客圖列·第75頁亥字圈（星學綱目圖說下）.md",
+      "SHA256": "81cd595943f3c4bf794975e971b3b55136188bbc5d87c42364ee3dfb49054b31"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/吊客圖列·第77頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "7a46dcd51838a2ca6f081e393fc1921aa9390a555187976b0659583726b84bb6"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/吊客圖列·第80頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "ac537d70033590a84b90f9a6b31ea26f07e2b20662362c9705250b3c3afb8fb2"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/吊客圖列·第82頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "67ac5b06c535618e53521ecfeec5d54798e97cfc38ffaa4dfb5791be313391ab"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/咸池圖列·第76頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "d619dc5b071dba4e0cc9542a5d7d82f8b99fe5c1c3319e70cd4eae0fb23689d8"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/咸池圖列·第78頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "87bf1b9431a5af8e9700288d84a150cfafacc0b003d28f6f4966fbadf5d8a603"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/咸池圖列·第79頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "c7e87e0190b6206f7e9f2e8d64ac5f5c1b54ba8baf54aa2c1b93efd84ece048a"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/咸池圖列·第81頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "0e4407e37e7087c55ed60b3c462f38efae241e588d6baf6d6b15d6946036ba94"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/喪門圖列·第76頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "b9606a7183be00cf4333f2694a2e3c1c73d259d9974ad91a60de3a39a266241b"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/喪門圖列·第80頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "1de7c69e79ce498310bed969b00528ec5acb316ef6ef7e1c8454b514a2eb6b2a"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/喪門圖列·第82頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "896bdb97adce1dd4341812067e67e583f06d9364b2eb0562fc40d1599a2ccf55"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/地杀圖列·第81頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "50371b7c14c384e6a0e931341d4d5b04b49a37504d5a2cfeee4f6d64ba5974c1"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/地煞圖列·第76頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "66505bc48b3d5c76496d955f844004b652f5ee87490be3c99527fd9d45798c37"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/地煞圖列·第78頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "56829a7838e3300d1fb62e4fe1af525c8d16235349eaf697d6de3fbe565b819b"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/地煞圖列·第80頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "4f85ec094ee005c2b4f9d2b3ca237b1d834f08b4a82a3aade4d3eac0059a852b"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/地解圖列·第75頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "8954c90d36fe76a0c0e02e6d8331e07b124f820d0eacc50a157792d0e2863eed"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/地解圖列·第77頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "b5b9939575914328f5a605ad03fd2e2f3b69cadb9436b9a4f19d002413f996a6"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/地解圖列·第79頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "d399890281d4712894e8bc2d7ba9b174df37971e6e57e7800feaff754d3e5a75"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/大殺圖列·第75頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "00fdbc0234355fb0d26ca354c259cf6a716435064b84ac0d193c341a3830a4ad"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/大殺圖列·第77頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "83ba577ee37668a9dc71c1350e8af65994fc776a98343954b4e8d7b19c01a18f"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/大煞圖列·第79頁亥字圈（星學綱目圖說下）.md",
+      "SHA256": "13e31c7b7e0f12094f9c22837558fe35ef552c81752954b21d245dc2f3b6d149"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/大耗圖列·第75頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "83d8a81c4d527ffa26fb983fdf192b559890ed4f824c319090d99724d45c0c07"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/大耗圖列·第77頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "531fda88ddde394a12c22d52deb5b88bfeb63b66351072ec38e00a60ff1f4ea6"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/大耗圖列·第79頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "dba8e26b27d82004fe9011bae5d60b41d6db91c86473a6e6f08da3fd40478c12"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/大耗圖列·第81頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "ac231b42a32cc3232ca9a026e31c5b1a418a41fbc1a66ee32bcadd5b2b978416"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天厄圖列·第75頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "d21c73395bf9213161be032f45117ce36850b3ce9cdd90fa3a8a06aae73c14ee"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天厄圖列·第77頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "3d21061666a211f9b7d46a23054b6340caf04b12beb061665a50001e53e60eda"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天厄圖列·第78頁辰字圈（星學綱目圖說下）.md",
+      "SHA256": "261d179a878d2a965037753764ed7628f49c5db8677341f911b3f90f89da285d"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天厄圖列·第79頁亥字圈（星學綱目圖說下）.md",
+      "SHA256": "89d630a6567f5ee7bf4b5ec1187ef4209c1028a2a59f8d29c83a7f3d96789c76"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天厄圖列·第81頁亥字圈（星學綱目圖說下）.md",
+      "SHA256": "caa394025187186a29d7f185169703f374b64435f7c447c626efb4c3eb8037fd"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天哭圖列·第80頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "b5f186ef7de7e8c9f1b796a022b2bff7ff80fd36ea0f82b8b63bccfb21f7477c"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天喜圖列·第80頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "839d21fa9f07c1e554857f1c9c2467f5723bf46553d00e5fa2610145d76b0c40"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天官圖列·第77頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "c45533c2c83f3e8cdd70cc234078a88f079d26ea5736dd8fc4fa88d698ce48a0"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天官符圖列·第75頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "995c51ce4ab9301fc7b15c053b29c1076a5b48ecd67cd22c8395b2e671509cd9"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天官符圖列·第78頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "d691c9a0acadfb5790c6ed0d729ce6bca0171664a13b2eabd62c77dcc2e8d54e"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天官符圖列·第80頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "41cfc4e1174bfe66619ef183c38374bb68513704bcce9bac472e1570f154e758"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天官符圖列·第81頁亥字圈（星學綱目圖說下）.md",
+      "SHA256": "cff299c6b6289f8f4f8e8e7069d484771f1eb5adcc4a9503e47eaa986e394937"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天杀圖列·第81頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "446d12e5b6c122eafb982b73528b75b2941a4cf9de1ec8dfdb72bdf284d67abf"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天煞圖列·第76頁辰字圈（星學綱目圖說下）.md",
+      "SHA256": "cf0ed1017475a2a3e3652f0be03fb805782759b54bf74799113f2c68980d96b0"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天煞圖列·第78頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "8cc616cb85bbd3cad12cce9b7d500a5cb8d4006d3790e3fa18022f9c3fbc04fe"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天狗圖列·第80頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "010979c49a12236ef3c24207726739425912b94916dbda2fcace0af0c447aaac"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天狗圖列·第82頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "fc05a0a7325328662d9499fa77219944af37df8b6d5a2f55f31e5cada53c8a60"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天空圖列·第76頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "ff34a83444c2ca802f5622f07762628d93989a432257979d66d918f2ed99f394"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天空圖列·第78頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "d46f81ae63f2e2b89cbf7093c78bd701c7fdf706b38f1fe0838a602fc2f0115f"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天空圖列·第80頁辰字圈（星學綱目圖說下）.md",
+      "SHA256": "1c2b129d08d35503de732ed677a176775435b394763c1667012f83da3104ce9a"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天解圖列·第75頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "a725247fa74de4231044e498547267b81ce4611a2598f3fbf19b0101a4a73a19"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/天馬圖列·第77頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "08c70f73b938458a77faf9d015258ebe1279052319640653eb3c289f468bc334"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/太陰圖列·第81頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "5ca998261830d997ac3642a576fbb405b516d7236786b9c6b99cbcbf1fda274f"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/孤辰圖列·第76頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "7ef8e2a660591d8edfc64d86354431a89e459390d9779c03407a6e8603049cd5"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/孤辰圖列·第78頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "14c506370403b259f41976d53725fa4c1918ef2971d26df8db09047879e1d857"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/孤辰圖列·第80頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "7bc9217338c586f72595e26c78c549572c3dd9f9eb7399ecf41d8c22becd52bc"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/孤辰圖列·第82頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "31accd399ba9be5d817bce19b4a3bf545b8b016e18cef87ce8ba806156d99638"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/官符圖列·第76頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "904d52d71f457734f6458d0d61df1079103ad77220551d9901bf77f542befac6"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/官符圖列·第78頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "fd834592179cfcb2535c6b757f63cf08e7045e9b19dd89b025762dff6fc0d4c9"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/官符圖列·第81頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "61763b54806c0727bc8aab59007c3bcfdd14a2a548b3350faec9b9ecfdff6021"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/寡宿圖列·第75頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "31c026b4f0c8fa3735f7f906bf68010adf71aeb4682976f815d3ebacbaa408bc"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/寡宿圖列·第78頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "ae9433d2001bf1bb2db18c6068448a50d987914cbc689812ae26f5aab29ee0a7"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/寡宿圖列·第80頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "6baddaa4ec508a1d6fec5a22cc118005fcb8b6d9478f50c5db8919af51c8b6d1"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/寡宿圖列·第81頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "b43a3af0c09ac2a1efbd9810e00f42170198f8e952f0909bf0dd9dfc1508e131"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/將星圖列·第75頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "677df9dc1e0724125254acb3117a20c7f1abdde81305a1e2e3cbaa5f46824b50"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/將星圖列·第78頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "71d1103625d103efad9304ab30ed0a77cf942c1465e4d50224340f20efc155a7"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/將星圖列·第80頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "f92e1dc125023681d35420aa2b8db7bc7ea67ac1bd49891ebe43f38f73218023"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/將星圖列·第81頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "fbf9f47720138342b73fedc83dcd9a32a85881a7eb53ceab53d1a64566cbbe7f"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/小耗圖列·第76頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "9376cabd3a55ac0aaa536d0fc17a660b4e59d55c1eeb714e3353e9487f009456"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/小耗圖列·第77頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "b46e32c919686d525829e9198ec9613f5fa42776ff9d57e1a0ffb130c7ed6b79"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/小耗圖列·第79頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "8003e7064aec80a5bb9baf33e334bcb9fa6120970c20a429ef20cbe1014fd491"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/小耗圖列·第81頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "66a6cf0f6219b0298cb9fe44978f2a63100290dd79b73794bd853c9f7a329fe9"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/年杀圖列·第81頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "a0728aea61c609e2dacc7ed0cc2fde3481eb2dd555f4339b5838a6f3bdfbb807"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/年殺圖列·第76頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "f9bf53fddd34e1a800e9a20383ab47c246da91ccfc8ca0a7dee509ae2f7dd1f4"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/年煞圖列·第78頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "f8842e7af802001cc15a08d95db0f77ae9ab29a2ad7ae0a6b552405ad70b3429"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/年煞圖列·第79頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "b3518fb7bbcd1349929a81d3520eeec768ce755554f91052f2bbdc1b8180cee0"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/披頭圖列·第78頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "fab1b6c0a107588f9d4ee023a24012e37a0e830f2bacda37edf96abd8e015947"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/披頭圖列·第80頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "d5377a8d8a52d34e7fb76e8f8daeba2823f3ed22b7337c7e23b62d6ec8d06671"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/披頭圖列·第81頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "2dc0c88053db2bebcfc596c298461a8045261868b31100c39f1c765cb7be059d"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/暴敗圖列·第79頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "3d2458948a49598b60e4e5c29c2f1ad8ffb568a7fe5793bb73442c9c52eb63c9"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/月杀圖列·第81頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "e655edcabc53312c9901ecdcafa43b76cf1ee90f68c22704071233ab93b2066c"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/月煞圖列·第78頁辰字圈（星學綱目圖說下）.md",
+      "SHA256": "91588f2d5a52c6a436c429f7e523b20cfc7e3dc92914bd49c7fbfff69015f46a"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/月煞圖列·第80頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "c76fa9fb0a5b28b49807196942653e6eda1ace985408e3d9e5a05b3069116db8"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/死符圖列·第77頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "ae69cd06da7a553046751299579c009d0f6e3599a7e7828d638838d6c040dd73"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/死符圖列·第79頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "91ff262f5468567a1e3614841691b199b7d030ec56f81c7bdcebf1f4cf9c9d7d"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/浮沉圖列·第75頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "34d6c64a52a3f1fc1891cc4bf8b562138e3f111334ae6866309b5274e82faf83"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/浮沉圖列·第77頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "d6fab46c9fd5fd0401d73570e98da229c83bd4092897b2d23c400c969a3cc173"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/浮沉圖列·第79頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "a9f95d0fffd29092d26b9d8f2e9c328a56de3cce864e5a06aaa05af573cf4c7b"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/浮沉圖列·第82頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "8cefcd78aeb8018ef441a04841637f2b5a910b24e5a515e6c34044f599c0e480"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/災煞圖列·第76頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "1a2c0f05c89512b30f83ac775b825d7574c5b2294a67a32f991024e28e01efbd"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/災煞圖列·第77頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "745624ade0d261249d84549d8dbc6c6324c2060ead5d55b31b46ede21e216c1a"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/玉堂圖列·第76頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "e8e67615d3d85954e8d19cf46826dfde892cdece59dc0137044bf95d32959013"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/病符圖列·第75頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "dac19a9017c34428e29efb079ada3a93d42ae4ebb2ccb7ad3b81b4cb69aa8024"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/病符圖列·第78頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "aa8302c9c4336063d5b9eb435a4b01eb65194957c90b9aa61376c91571f8c09e"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/病符圖列·第80頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "6987615ad5baad18cf04d8f117665dabbd477bea1c263c71f03b3d92db6efa7b"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/病符圖列·第82頁卯字圈（星學綱目圖說下）.md",
+      "SHA256": "13a952a2d88bd1581292a32de6f5c6ce64dfd2ee68de20941426b91f0da1762a"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/白虎圖列·第75頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "34895291ac96f912f5b928b23fd63a2ccdf1164c5369b23f024b9ac29f37caeb"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/白虎圖列·第77頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "fee9a2dbb162e7e1bac8ce504256a05d1a2f19179bc4fcb5ec8a02295db6013c"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/白虎圖列·第79頁亥字圈（星學綱目圖說下）.md",
+      "SHA256": "fdcfd0bb0b7bbf461229d91e601566c3eb592fab6a26b6c7d23a3db0a512aca5"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/白虎圖列·第81頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "e2f8b5d2eb64ae331c5d9d0f509ddac94baac31d5837c0a49eaa0417b15722a5"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/破碎圖列·第75頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "f1140b24d708bb459c4d21b259117073e1309b3fc401c61ca0aef1cf150d2efd"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/破碎圖列·第77頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "1af70cb1446c22b0332b09d837a180255d437f65a308b915360054181ce6d0b6"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/破碎圖列·第81頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "59128580bd0920c6f1c611c043f28b9e5c56c4ab384978cafc4847f5de3f0f61"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/福星圖列·第75頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "3a426bcacb0cd0157b94ed047c69ee4836737388c0cdadb4109ce8f0b7d75e3f"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/福星圖列·第77頁亥字圈（星學綱目圖說下）.md",
+      "SHA256": "c9cff4baa54afa33308865c0e2515e190ed81f0a6550ef871946252cb6297f62"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/福星圖列·第79頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "47c62750bfb1e7d7816a03019f5e053c00db64536bb147339ff20726a96d3835"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/福星圖列·第82頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "ece7935295cc453b1c1b60d760d5b7fbe6cdfef2d98c2deec9fa1c9eb5d958e5"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/紅鸞圖列·第76頁寅字圈（星學綱目圖說下）.md",
+      "SHA256": "b71581a3bd3161031e0245a81ecff0231fe46535051a75861132d24f8a14c3e7"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/紅鸞圖列·第78頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "2e085a8239df9c50b0f2fd506917d764795ff94cab8388247927c1410fdb3270"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/紅鸞圖列·第79頁子字圈（星學綱目圖說下）.md",
+      "SHA256": "8d3b7a177f488c5efcbd3e8fee72090f035d24b96c1872301840a26b00e2f132"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/紫微圖列·第75頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "4e911003f981f45149a41258a35bb962b015676aa3eca95c3b98646fa440ebc9"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/紫微圖列·第77頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "5656250ebfd0a3435da0c45547770db6b32bc0e98ea1e4dfe2eb696ad024b7fa"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/紫微圖列·第79頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "c6b040d60242c3a14cf3005675da77d6e89658353ea47d7fff7397513c45335f"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/紫微圖列·第81頁亥字圈（星學綱目圖說下）.md",
+      "SHA256": "f40887ae596f5affc5d37980f9b97def36cd18929881f9f10f6e7670feb01849"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/華蓋圖列·第76頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "3a989618a48440fea36c240647fe7dd52b6261ed41cbdf3c3e8a461e411bfca1"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/華蓋圖列·第77頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "e0705610646325baf22e0369429f3c5d1dc3637e200216d7296af891ffaf822b"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/華蓋圖列·第79頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "b55f260995c345329eae16bb7ef3486b12068b02c0ad3c8200bdfbb069c28f48"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/華蓋圖列·第82頁辰字圈（星學綱目圖說下）.md",
+      "SHA256": "ceef91ccdb3ef97b588fc5701888084539d5a1f5fbba4631dbc7fcd051b10224"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/血刃圖列·第75頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "8d58b1536a106cf0dd74fd4a30b156e847221e643382fa912fbecd40f4425d81"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/血刃圖列·第77頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "109ec301411316f81a13be6ab732dbfe6cbdba9c38510963aafb367764a05054"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/血刃圖列·第79頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "41e470fa9d89574ebd75ba073f3b94e144343a0a490819796cb5f3214251d964"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/血刃圖列·第82頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "bb179f2253b8e6d404d0f34886e9542f2a68feb49245d844da2e12eb2cb0c486"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/解神圖列·第75頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "6f2a1bc6d4370f2123bc7d3f6efbfaefc291beec53f176904bd9a78f6f20b44b"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/解神圖列·第77頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "afc9df02b6ea3947ed0a326ba382006067d0e5f1c6e3437f65488cc6b114b0fe"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/解神圖列·第79頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "22d7656ff84a46487c328088968091686cd0f5ecdbc587a09ca657e7564061e2"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/解神圖列·第82頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "258ee1ec93fb1a250d6c8abfc871259b1f88816c1d248925a0e235cedff959a6"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/豹尾圖列·第75頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "a3211f768d19b0bd4d7851485745cade37a1761694a2f5f5afd6a41e8eb97577"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/豹尾圖列·第78頁辰字圈（星學綱目圖說下）.md",
+      "SHA256": "ae448ea7f674d7b17d3183f437dc56bf51de7cf13bb43774196029690678d66e"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/豹尾圖列·第80頁丑字圈（星學綱目圖說下）.md",
+      "SHA256": "f00f2f33b4a9d8c32b0cdf268234dc438552d31349cc09326be9d56f6f718095"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/豹尾圖列·第81頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "99ff293fd875f179c548d1b6845145bd349a671a1210123a9477d4ddf0a93a37"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/貫索圖列·第76頁辰字圈（星學綱目圖說下）.md",
+      "SHA256": "d1fdbf1487673be8a0436c05b652d82e1b5a7ee34936c9beab1ec511f8be54dc"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/貫索圖列·第78頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "2944538fe1c4266e4a636726c40a4ba73a65d605d52da2afc931c3120ea5efed"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/貫索圖列·第80頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "4cfcd8347f9f82dcea465f0c07dfa2151393154569ee47afd93d24899c77a73c"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/貫索圖列·第81頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "344b71ff84ee0a0d5d494831666792b983abbf469beefebde338b6e90fc6f224"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/闌干圖列·第75頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "15a7503e1cb38d1603c093152dbef5f860290f30794d7ec45b5037da85a8d73f"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/闌干圖列·第77頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "799c007b52f6046aca4249a225c0a6788ae20ad51e2d22355a37a41b1eb03eb7"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/闌干圖列·第79頁酉字圈（星學綱目圖說下）.md",
+      "SHA256": "30040505b73a21c3fcd81895e465549ed4dd4f3414469ec26e2705e68f20d0b1"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/闌干圖列·第81頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "cc8f52126b661a7e1086b2bba483cd819ba41096f974734e1df36cf126431920"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/飛符圖列·第76頁巳字圈（星學綱目圖說下）.md",
+      "SHA256": "ab42ca834a08d050c0eff660d691fe7929411e3929083bdd8d2b8198cdd86f73"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/飛符圖列·第78頁午字圈（星學綱目圖說下）.md",
+      "SHA256": "406a71a4e36afe50f979c58bc180844ad6cbdb530387169861a3d5d5642edc1d"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/飛符圖列·第79頁未字圈（星學綱目圖說下）.md",
+      "SHA256": "5950320d115eee83e55dc6294f54af464862f82b715e003e93e3c2e4c9014b97"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/飛符圖列·第81頁申字圈（星學綱目圖說下）.md",
+      "SHA256": "1ed1624710d3c15c5e8efc3ee4c36be134ad135db5248510f57bed3f086ea25f"
+    },
+    {
+      "檔案": "qi-zheng-si-yu/knowledge/龍德圖列·第79頁戌字圈（星學綱目圖說下）.md",
+      "SHA256": "2534c4a26ac5b0bdec499d815eb5aa36b4578384c05d2f4efe029578cfe7aa9f"
+    }
+  ]
+}
