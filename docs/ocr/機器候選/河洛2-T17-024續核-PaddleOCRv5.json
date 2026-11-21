@@ -1,0 +1,133 @@
+{
+  "狀態": "OCR候選，未校讀，不得直接入卡",
+  "原圖SHA256": "1e8adac54bedf8383bece39e0d2ebea96baedf0f1bedb5b8f5590c75455a5ec4",
+  "原圖檔名": "河洛2-T17-024原圖旋轉90續核.png",
+  "說明": "保留模型原字、框位、分數；分數不等於原文正確率；未微調。",
+  "裁切設定": null,
+  "框位說明": "裁切模式的框位相對於放大後的局部圖，依裁切設定還原；不是全頁框位。",
+  "結果": [
+    {
+      "res": {
+        "input_path": "/workspace/review/ocr/河洛2-T17-024原圖旋轉90續核.png",
+        "page_index": null,
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_textline_orientation": false
+        },
+        "dt_polys": [
+          [
+            [
+              7,
+              41
+            ],
+            [
+              17,
+              41
+            ],
+            [
+              17,
+              61
+            ],
+            [
+              7,
+              61
+            ]
+          ],
+          [
+            [
+              85,
+              61
+            ],
+            [
+              111,
+              40
+            ],
+            [
+              123,
+              57
+            ],
+            [
+              97,
+              78
+            ]
+          ]
+        ],
+        "text_det_params": {
+          "limit_side_len": 64,
+          "limit_type": "min",
+          "thresh": 0.3,
+          "max_side_limit": 4000,
+          "box_thresh": 0.6,
+          "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+          -1,
+          -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+          "H",
+          "司"
+        ],
+        "rec_scores": [
+          0.2668170928955078,
+          0.061643630266189575
+        ],
+        "rec_polys": [
+          [
+            [
+              7,
+              41
+            ],
+            [
+              17,
+              41
+            ],
+            [
+              17,
+              61
+            ],
+            [
+              7,
+              61
+            ]
+          ],
+          [
+            [
+              85,
+              61
+            ],
+            [
+              111,
+              40
+            ],
+            [
+              123,
+              57
+            ],
+            [
+              97,
+              78
+            ]
+          ]
+        ],
+        "rec_boxes": [
+          [
+            7,
+            41,
+            17,
+            61
+          ],
+          [
+            85,
+            40,
+            123,
+            78
+          ]
+        ]
+      }
+    }
+  ]
+}
