@@ -29,7 +29,8 @@ def run(planfile):
         for b in item['紅框']:
             draw.rectangle(((b[0]-clip[0])*4,65+(b[1]-clip[1])*4,(b[2]-clip[0])*4,65+(b[3]-clip[1])*4),outline='red',width=3)
         image=folder/f'{i:02}-{page}-{label}-{circle}.png';panel.save(image)
-        cite=f'《{book}》第{page}頁〈六十年甲子圖〉：\n\n原文以圖表呈現\n\n'
+        section=item.get('篇名','六十年甲子圖')
+        cite=f'《{book}》第{page}頁'+(f'〈{section}〉' if section else '')+'：\n\n原文以圖表呈現\n\n'
         old=None;insertion=None
         if item.get('處理','新增')=='新增':
             body=f'#七政四餘\n\n## 核心概念\n\n原文未提及\n\n## 使用規則\n\n{cite}{circle}\n\n{text}\n\n## 操作步驟\n\n原文未提及\n\n## 原文例子\n\n無\n'
