@@ -25,9 +25,9 @@ def run(planfile):
         page=item['頁'];circle=item['圈'];label=item['題字'];text=item.get('原文字列',label)
         name=item.get('卡片',f'{label}圖列·第{page}頁{circle}字圈（星學綱目圖說下）.md')
         path=K/name;src=Path('/workspace/review/ocr')/item['原圖檔名'];im=Image.open(src).convert('RGB')
-        clip=item['上下文'];tile=im.crop(clip);tile=tile.resize((tile.width*4,tile.height*4));panel=Image.new('RGB',(max(1050,tile.width),tile.height+65),'white');panel.paste(tile,(0,65));draw=ImageDraw.Draw(panel);draw.text((8,8),f'{book} PDF第{page}頁／{label}與{circle}字圈：人工核字',font=FONT,fill='black')
+        clip=item['上下文'];tile=im.crop(clip);scale=min(4,1600/max(tile.size));tile=tile.resize((int(tile.width*scale),int(tile.height*scale)));panel=Image.new('RGB',(max(1050,tile.width),tile.height+65),'white');panel.paste(tile,(0,65));draw=ImageDraw.Draw(panel);draw.text((8,8),f'{book} PDF第{page}頁／{label}與{circle}字圈：人工核字',font=FONT,fill='black')
         for b in item['紅框']:
-            draw.rectangle(((b[0]-clip[0])*4,65+(b[1]-clip[1])*4,(b[2]-clip[0])*4,65+(b[3]-clip[1])*4),outline='red',width=3)
+            draw.rectangle(((b[0]-clip[0])*scale,65+(b[1]-clip[1])*scale,(b[2]-clip[0])*scale,65+(b[3]-clip[1])*scale),outline='red',width=3)
         image=folder/f'{i:02}-{page}-{label}-{circle}.png';panel.save(image)
         section=item.get('篇名','六十年甲子圖')
         cite=f'《{book}》第{page}頁'+(f'〈{section}〉' if section else '')+'：\n\n原文以圖表呈現\n\n'
