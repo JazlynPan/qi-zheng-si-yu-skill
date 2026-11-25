@@ -39,12 +39,18 @@ def run(planfile):
     assert all(hashlib.sha256((K/n).read_bytes()).hexdigest()==h for n,h in before.items() if n not in changed)
     total=len(list(K.glob('*.md')));assert total==len(before)+len(newnames)
     bookcount=sum(any(b==book for b,a,z,u in parse(p.read_text())[1]) for p in K.glob('*.md'))
-    report={'日期':date,'基準提交':base,'新增卡數':len(newnames),'既有卡只追加引文':len(changed),'既有字值覆寫':0,'其餘舊卡異動':0,'全庫卡數':total,'本書卡數':bookcount,'明細':rows,'保留待核':plan['保留待核']}
+    pending=[]
+    for i,item in enumerate(plan.get('待核圖',[]),1):
+        src=Path('/workspace/review/ocr')/item['原圖檔名']
+        image=framed_image(src,item['原框'],folder/f'待核-{i:02}-{item["頁"]}.png',item['問題'],scale=4,margin=25)
+        pending.append({**item,'紅框圖':image,'處理':'僅留圖與候選，不入卡'})
+    report={'日期':date,'基準提交':base,'新增卡數':len(newnames),'既有卡只追加引文':len(changed),'既有字值覆寫':0,'其餘舊卡異動':0,'全庫卡數':total,'本書卡數':bookcount,'明細':rows,'保留待核':plan['保留待核'],'待核圖':pending}
     (archive/'舊新全文與SHA256.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     (D/(stem+'.json')).write_text(json.dumps({k:v for k,v in report.items() if k!='明細'}|{'明細':[{k:v for k,v in r.items() if k not in ('舊全文','新全文')} for r in rows]},ensure_ascii=False,indent=2)+'\n')
     md=['# '+stem,'',plan['說明'],'',f'新增{len(newnames)}卡、既有卡只插入引文{len(changed)}張；既有原字覆寫0，其他卡異動0。全庫{total:,}張、本書{bookcount:,}張。','','|頁|圈|原字|處理|圖|','|---|---|---|---|---|']
     for r in rows:md.append(f'|{r["頁"]}|{r["圈"]}|{r.get("原文字列",r["題字"]).replace(chr(10)," ")}|{r.get("處理","新增")}|[紅框](../{r["紅框圖"].removeprefix("docs/")})|')
     md+=['','[舊新全文與SHA256](../勘校修訂/'+stem+'/舊新全文與SHA256.json)。新卡四欄、來源及同頁完全同文檢查通過；插入引文可逐位元組移除還原舊卡，不改舊字。','','## 保留待核','']+['- '+t for t in plan['保留待核']]
+    md += [f'- {x["問題"]} [紅框](../{x["紅框圖"].removeprefix("docs/")})；未入卡。' for x in pending]
     (D/(stem+'.md')).write_text('\n'.join(md)+'\n')
     if changed:
         with (ROOT/'docs/勘校修訂紀錄.md').open('a') as f:f.write(f'\n## {date}【原文續錄】{stem}\n\n既有卡{len(changed)}張只插入新引文，不替換原字；完整舊新全文與SHA256已留存。[逐項原圖](檢查/{stem}.md)；[全文留存](勘校修訂/{stem}/舊新全文與SHA256.json)。\n')
