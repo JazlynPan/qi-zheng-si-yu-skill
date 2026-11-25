@@ -8,10 +8,19 @@ import argparse,subprocess
 def run(planfile):
     plan=json.loads(planfile.read_text());date=plan['日期'];stem=plan['批名'];book=plan['書名']
     archive=ROOT/'docs/勘校修訂'/stem
-    assert not archive.exists(),'本批已執行，禁止重複追加'
-    before={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in K.glob('*.md')}
+    assert not archive.exists() or not any(archive.iterdir()),'本批已有完整留存，禁止重複追加'
+    tracked={Path(p.decode()).name for p in subprocess.check_output(['git','ls-files','-z','qi-zheng-si-yu/knowledge'],cwd=ROOT).split(b'\0') if p}
+    planned=set()
+    for item in plan['明細']:
+        if item.get('處理','新增')!='新增':continue
+        name=item.get('卡片',f'{item["題字"]}圖列·第{item["頁"]}頁{item["圈"]}字圈（星學綱目圖說下）.md')
+        assert name not in tracked,'原有卡不得重建：'+name
+        assert name not in planned,'本批名稱重複：'+name
+        planned.add(name)
+    assert all(p.name in tracked or p.name in planned for p in K.glob('*.md')),'有本批以外未追蹤卡片，先核對來源'
+    before={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in K.glob('*.md') if p.name in tracked}
     base=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT).decode().strip()
-    rows=[];newnames=[];changed=[];archive.mkdir();folder=PIC/stem;folder.mkdir(exist_ok=True)
+    rows=[];newnames=[];changed=[];archive.mkdir(exist_ok=True);folder=PIC/stem;folder.mkdir(exist_ok=True)
     for i,item in enumerate(plan['明細'],1):
         page=item['頁'];circle=item['圈'];label=item['題字'];text=item.get('原文字列',label)
         name=item.get('卡片',f'{label}圖列·第{page}頁{circle}字圈（星學綱目圖說下）.md')
@@ -23,9 +32,9 @@ def run(planfile):
         cite=f'《{book}》第{page}頁〈六十年甲子圖〉：\n\n原文以圖表呈現\n\n'
         old=None;insertion=None
         if item.get('處理','新增')=='新增':
-            assert not path.exists(),name
             body=f'#七政四餘\n\n## 核心概念\n\n原文未提及\n\n## 使用規則\n\n{cite}{circle}\n\n{text}\n\n## 操作步驟\n\n原文未提及\n\n## 原文例子\n\n無\n'
-            assert not any(body==p.read_text() for p in K.glob('*.md'))
+            if path.exists():assert path.read_bytes()==body.encode(),'中斷批次的未追蹤卡與定字稿不同：'+name
+            assert not any(body==p.read_text() for p in K.glob('*.md') if p.name!=name)
             newnames.append(name)
         else:
             assert item['處理']=='插入原文' and path.exists()
