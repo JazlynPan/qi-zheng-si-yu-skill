@@ -15,6 +15,10 @@ for pattern in ['綱目*細字續核-2026-11-25.json','綱目84頁伏尸旁字�
    boxes=r.get('紅框')
    if not boxes:continue
    proofs.append({'頁':r['頁'],'人工框':boxes[0],'圖':r['紅框圖'],'卡片':r['卡片'],'原圖SHA256':r['原圖SHA256'],'報告':p.name})
+upper=json.loads((D/'綱目上表現卡與舊定位對照-2026-11-26.json').read_text())
+for r in upper['明細']:
+ if r['存在']:
+  proofs.append({'頁':r['舊定位實際頁'],'人工框':r['舊定位框'],'圖':r['舊原圖'],'卡片':r['卡片'],'原圖SHA256':r['目前原圖SHA256'],'報告':'綱目上表現卡與舊定位對照-2026-11-26.json','坐標限制':'沿用舊定位函式／坐標，不是重新核定值；不因相交而消除頁碼或欄位疑點'})
 for r in frames:
  n=r['PDF實際頁碼']
  if n not in sources:
