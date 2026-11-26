@@ -12,7 +12,7 @@ for file in ['登籍31組補卡預覽-2026-11-26.json','其餘八組歲殿登籍
  for row in data['明細']:
   if '擬新增卡名'in row:drafts[row['擬新增卡名']]=file
   for card in row.get('擬新增卡',[]):drafts[card['卡名']]=file
-for file in ['綱目75乙丑未見題名原格-2026-11-26.json','綱目乙年頭右緣續核-2026-11-26.json','綱目跨頁右緣三元36格續核-2026-11-26.json']:
+for file in ['綱目75乙丑未見題名原格-2026-11-26.json','綱目乙年頭右緣續核-2026-11-26.json','綱目跨頁右緣三元36格續核-2026-11-26.json','綱目上表其餘32格原圖-2026-11-26-結果.json','綱目73丙子原欄20題讀圖-2026-11-26-結果.json']:
  data=json.loads((D/file).read_text())
  if '擬新增卡名'in data:drafts[data['擬新增卡名']]=file
  if '官印完整預覽'in data:drafts[data['官印完整預覽']['卡名']]=file
