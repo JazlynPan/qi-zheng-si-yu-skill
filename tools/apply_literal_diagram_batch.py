@@ -33,7 +33,8 @@ def run(planfile):
         cite=f'《{book}》第{page}頁'+(f'〈{section}〉' if section else '')+'：\n\n原文以圖表呈現\n\n'
         old=None;insertion=None
         if item.get('處理','新增')=='新增':
-            body=f'#七政四餘\n\n## 核心概念\n\n原文未提及\n\n## 使用規則\n\n{cite}{circle}\n\n{text}\n\n## 操作步驟\n\n原文未提及\n\n## 原文例子\n\n無\n'
+            literal=item.get('使用規則原文',circle+'\n\n'+text)
+            body=f'#七政四餘\n\n## 核心概念\n\n原文未提及\n\n## 使用規則\n\n{cite}{literal}\n\n## 操作步驟\n\n原文未提及\n\n## 原文例子\n\n無\n'
             if path.exists():assert path.read_bytes()==body.encode(),'中斷批次的未追蹤卡與定字稿不同：'+name
             assert not any(body==p.read_text() for p in K.glob('*.md') if p.name!=name)
             newnames.append(name)
